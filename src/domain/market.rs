@@ -1,7 +1,3 @@
-#[cfg(test)]
-#[path = "market_test.rs"]
-mod market_test;
-
 use serde::Serialize;
 use thiserror::Error;
 
@@ -66,3 +62,7 @@ impl Market {
         &self.quote_asset
     }
 }
+
+#[cfg(test)]
+#[path = "market_test.rs"]
+mod market_test;
